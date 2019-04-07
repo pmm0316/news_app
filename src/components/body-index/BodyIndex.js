@@ -9,6 +9,10 @@ export default class BodyIndex extends Component {
 			value: ''
 		}
 	}
+	componentWillUnmount(){
+        clearTimeout(this.pwdErrorTimer);
+        clearTimeout(this.userNameErrorTimer);
+    }
 	handleChildValueChange = (event) => {
 		this.setState({
 			value: event.target.value

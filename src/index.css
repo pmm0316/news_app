@@ -1,3 +1,5 @@
+/* 全局样式 */
+@import '~antd/dist/antd.css';
 body {
   margin: 0;
   padding: 0;
@@ -12,3 +14,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+/*全局iconfont*/
+@font-face {font-family: "iconfont";
+  src: url('./static/iconfont/iconfont.eot?t=1554621858918'); /* IE9 */
+  src: url('./static/iconfont/iconfont.eot?t=1554621858918#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAM0AAsAAAAACCwAAALnAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCCcAqEOINfATYCJAMICwYABCAFhG0HLhsDB8ieg43jWIYlTpwy8iQfkooHeL1/z03y0KSCJmKCOUH5W6lJXjv3dwQ4ee78rt+v7ZmHutPP4yV1rH/Z98X3LTadkEiBEkmECKHREhqWvHrkS9TY/xxLvnp+YPnfOyzgU4pKi6Zq6qAEOtDsRdHINh2gbRi7iaAhPiYg1VpXbsy44wNUJcCqgLB+jWNANaOUNGCDsqRYcTARjikoR/ujJ8BR/vvhn3EoEynEQNjklSsbpj+FlHFeyc2Pc6zp9DCOEaMnkBCmVxonKkTungpSz13UHmwrOPCzeaVCmZv9xyMQikBgTdBSZl4TC7Mv9SkRSFAHD4AvCiYZqtOoRU0QWTfZWfvui5bq5K3Jpbdj632/p3T+1bZzd6x7/V7zQtWdLEvyWwfvhFL8d+ocvGX5garOZrUOns5PpTN14WoqrFkoZZZS7oZmlpxbuyu6Nj9bzdWh6naaHrhJfmtWJh0U5/fzGeURbQl5Xpgw4QrXa0ptyzN87k0HXHRxQJrXrle7rcRryfhi/n0cM2l4ZV/tfSW0pYqpDiza24bxanQFtbh20SJZX+fCjxXpftQC62tTK9H1+n4RcG/6gMDXzj/fWWfI/3L2mEMfnh9fUskTcY7yOzAF/iWrY07ic4AqSlxWpT/yQOcdJaVSVKjW+v6GmhuBRB+UTZYMkZJWECvriEgwPaEgMxCKyoZDqofN8UwDrCAkNdDdhwRBXV8Qqa0aYnX9IBLMLxQ09g9FdUMMqZmhwYWZzmFNOnorGUI2mu/oWUmskEbqIviOnOfQ4DSH456ItWfDUe++ed+GYuIptugXZyyiUHES4Vp6GoVhgiknPlnSd0XSyaDPyqpv6ltJBHWjMWIQxIZM75DHkogpOljUCz9/hziehQzckNWjf0KY5s2ORvqGHRAbYdwp61a+or1wjAmhIIUlImgt6UkI3QmUVs/zEYvocwc4UxMDpZDqKuwvL47e7hSkgCwKMDqWbFzxqgEAAA==') format('woff2'),
+  url('./static/iconfont/iconfont.woff?t=1554621858918') format('woff'),
+  url('./static/iconfont/iconfont.ttf?t=1554621858918') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('./static/iconfont/iconfont.svg?t=1554621858918#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-news:before {
+  content: "\e61a";
+}
+

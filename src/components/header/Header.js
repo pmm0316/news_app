@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import {Link} from 'react-router-dom'
 import Mixin from 'react-mixin'
 import MixinLog from '../mixins'
 
@@ -11,6 +12,11 @@ export default class ComponentHeader extends Component {
 		return (
 			<header>
 				<h1>我是头部</h1>
+				<ul>
+					<li><Link to={`/`}>首页</Link></li>
+					<li><Link to={`/list/123`}>列表</Link></li>
+					<li><Link to={`/detail`}>详情</Link></li>
+				</ul>
 			</header>
 		)
 	}

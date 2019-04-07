@@ -9,6 +9,10 @@ const defaultProps = {
 }
 
 export default  class BodyChild extends Component {
+  componentWillUnmount(){
+    clearTimeout(this.pwdErrorTimer);
+    clearTimeout(this.userNameErrorTimer);
+  }
   render () {
     return (
       <div>
