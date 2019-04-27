@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {Col, Row, Menu, Icon} from 'antd'
-import '../../css/pc/header.scss'
 
 class PCHeader extends Component {
   constructor () {

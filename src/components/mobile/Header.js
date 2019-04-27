@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 
-import '../../css/mobile/header.scss'
-
 export default class Header extends Component {
   render() {
     return (

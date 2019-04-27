@@ -1,0 +1,17 @@
+html {
+  .header {
+    .logo {
+      padding-top: 5px;
+      display: flex;
+      font-size: 24px;
+      .iconfont {
+        width: 40px;
+        padding-top: 2px;
+        font-size: 24px;
+      }
+    }
+  }
+  .footer {
+    text-align: center;
+  }
+}
