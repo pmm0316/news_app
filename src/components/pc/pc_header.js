@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
-import {Col, Row, Menu, Icon} from 'antd'
+import {Link} from 'react-router-dom'
+import {Col, Row, Menu, Icon, Form ,Button} from 'antd'
 
 class PCHeader extends Component {
   constructor () {
     super()
     this.state = {
-      current: 'top'
+      current: 'top',
+      userNickName: '',
+      hasLogin: false
     }
   }
   handleClick = (e) => {
@@ -15,6 +18,20 @@ class PCHeader extends Component {
     });
   }
   render() {
+    const { getFiledProps } = this.props.form
+    const userShow = this.state.hasLogin
+      ?
+      <Menu.Item key="login">
+        <Button className="username" htmlType="button">{this.state.userNickName}</Button>
+        <Link target="_blank" to="">
+          <Button type="dash">个人中心</Button>
+        </Link>
+        <Button>退出</Button>
+      </Menu.Item>
+      :
+      <Menu.Item key="logout">
+        <Icon type="appstore" />注册/登录
+      </Menu.Item>
     return (
       <header className="header">
         <Row>
@@ -46,6 +63,7 @@ class PCHeader extends Component {
               <Menu.Item key="tiyu">
                 <Icon type="appstore" />体育
               </Menu.Item>
+              {userShow}
             </Menu>
           </Col>
           <Col span={2}></Col>
@@ -55,4 +73,4 @@ class PCHeader extends Component {
   }
 }
 
-export default PCHeader;
+export default PCHeader = Form.create({})(PCHeader);
