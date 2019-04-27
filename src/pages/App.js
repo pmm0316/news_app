@@ -1,14 +1,20 @@
 import React, { Component } from 'react';
-import './App.css'
+import MediaQuery from 'react-responsive';
 
-class App extends Component {
+import PCIndex from './pc'
+import MobileIndex from './mobile'
+
+export default class App extends Component {
   render() {
     return (
-      <div className="App">
-        {this.props.children}
-      </div>
+      <div>
+        <MediaQuery query="(min-device-width: 1224px)">
+          <PCIndex/>
+        </MediaQuery>
+        <MediaQuery query="(max-device-width: 1224px)">
+          <MobileIndex/>
+        </MediaQuery>
+      </div>  
     );
   }
 }
-
-export default App;

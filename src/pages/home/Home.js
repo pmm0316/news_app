@@ -8,6 +8,7 @@ class Home extends Component {
     return (
       <div className="Home">
         <ComponentHeader/>
+        {this.props.children}
         <BodyIndex age={26}/>
         <ComponentFooter/>
       </div>
